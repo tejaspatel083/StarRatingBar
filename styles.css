@@ -1,0 +1,107 @@
+
+  .rating1,.rating2,.rating3,.rating4,.rating5
+  ,.rating6,.rating7,.rating8,.rating9{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .rating1 li,.rating2 li,.rating3 li,.rating4 li,.rating5 li
+  ,.rating6 li,.rating7 li,.rating8 li,.rating9 li{
+    list-style-type: none;
+  }
+
+  .rating-item1, .rating-item2, .rating-item3, .rating-item4, .rating-item5
+  , .rating-item6, .rating-item7, .rating-item8, .rating-item9 {
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 2em;
+    color: black;
+  }
+
+  .rating-item1:hover, .rating-item2:hover, .rating-item3:hover, .rating-item4hover, .rating-item5:hover
+  , .rating-item6:hover, .rating-item7:hover, .rating-item8:hover, .rating-item9:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 2em;
+    color: black;
+  }
+
+  .rating-item1::before, .rating-item2::before, .rating-item3::before, .rating-item4::before, .rating-item5::before
+  , .rating-item6::before, .rating-item7::before, .rating-item8::before, .rating-item9::before{
+    content: "\2605";
+  }
+
+
+  .rating-item1.active ~ .rating-item1::before, .rating-item2.active ~ .rating-item2::before, .rating-item3.active ~ .rating-item3::before
+  , .rating-item4.active ~ .rating-item4::before, .rating-item5.active ~ .rating-item5::before, .rating-item6.active ~ .rating-item6::before
+  , .rating-item7.active ~ .rating-item7::before, .rating-item8.active ~ .rating-item8::before, .rating-item9.active ~ .rating-item9::before{
+    content: "\2606";
+  }
+
+
+  .rating1:hover .rating-item1::before, .rating2:hover .rating-item2::before, .rating3:hover .rating-item3::before
+  , .rating4:hover .rating-item4::before, .rating5:hover .rating-item5::before, .rating6:hover .rating-item6::before
+  , .rating7:hover .rating-item7::before, .rating8:hover .rating-item8::before, .rating9:hover .rating-item9::before{
+    content: "\2605";
+    color: lightgrey;
+  }
+
+  .rating-item1:hover ~ .rating-item1::before, .rating-item2:hover ~ .rating-item2::before, .rating-item3:hover ~ .rating-item3::before
+  , .rating-item4:hover ~ .rating-item4::before, .rating-item5:hover ~ .rating-item5::before, .rating-item6:hover ~ .rating-item6::before
+  , .rating-item7:hover ~ .rating-item7::before, .rating-item8:hover ~ .rating-item8::before, .rating-item9:hover ~ .rating-item9::before{
+    content: "\2606";
+    color: black;
+  }
+
+
+#col{
+position: absolute;
+  width: 60%;
+  height: 1000px;
+  left: 1;
+  margin-left: 200px;
+  background-color: transparent;
+  margin-top: 120px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white ;
+  height: 1000px;
+  width: 1200px;
+}
+
+.grid-item{
+
+position: relative;
+float: left;
+left:0;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  margin: 16px;
+  border: 1px solid black;
+}
+
+
+p{
+  font-size: 20px;
+  width: 260px;
+  margin-left: 5px;
+}
+p:hover
+{
+  background-color: black;
+  color: white;
+
+}
+img
+{
+  width: 150px;
+  height: 150px;
+}
